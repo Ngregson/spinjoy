@@ -15,6 +15,7 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException,
 import math
 import re
 import time
+import sys
 import pandas as pd
 
 def scrap_sellers_catalogues(list_urls):
@@ -198,4 +199,16 @@ def scrap_sellers_catalogues(list_urls):
             print(f'{seller_name}_full.csv has been created after removing {nb_of_duplicates} duplicates')
 
     driver.quit()
+
+if __name__ == "__main__":
+    # Check if command-line arguments are provided
+    if len(sys.argv) < 2:
+        print("Usage: python spinjoy_scraping.py <list_elements>")
+        sys.exit(1)
+
+    # The list provided as command-line arguments
+    my_list = sys.argv[1:]
+
+    # Call the function with the list provided as command-line arguments
+    scrap_sellers_catalogues(my_list)
 
