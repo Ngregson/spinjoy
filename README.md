@@ -105,7 +105,7 @@
   The selection is based on sorting values according to the <code>attractivity_score</code> data calculated through scoring.
 </p>
 
-    <p>
-        The function <code>define_spinjoy_selection</code> exports the selection as a file <code>spinjoy_catalog_{export_time}.csv</code> at the root of the project directory.
-    </p>
+<p>
+    The function <code>define_spinjoy_selection</code> exports the selection as a file <code>spinjoy_catalog_{export_time}.csv</code> at the root of the project directory.
+</p>
 
