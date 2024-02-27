@@ -32,7 +32,7 @@ def process_csv_files(directory_path):
         process_csv_file(file_path)
 
 # Specify the directory containing CSV files
-directory_path = '/Users/nicolaslewagon/spinjoy/csv_files'
+directory_path = '/csv_files'
 
 # Process all CSV files in the directory
 process_csv_files(directory_path)
