@@ -9,7 +9,7 @@ import glob
 import sys
 from datetime import datetime
 
-files = glob.glob('/Users/nicolaslewagon/spinjoy/aggregated_files/sellers_aggregate_*.csv')
+files = glob.glob('/aggregated_files/sellers_aggregate_*.csv')
 
 # Select the string containing 'scored'
 files_scored = [f for f in files if 'scored' in f]
@@ -53,5 +53,5 @@ def define_spinjoy_selection(genres_nb,catalog_size):
     # Get the current time
     current_time = datetime.now().time().strftime("%Hh%M")
 
-    df_sj.to_csv(f'/Users/nicolaslewagon/spinjoy/spinjoy_catalog_{current_date}_{current_time}.csv')
+    df_sj.to_csv(f'/spinjoy_catalog_{current_date}_{current_time}.csv')
 

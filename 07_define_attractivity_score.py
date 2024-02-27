@@ -8,8 +8,7 @@ import pandas as pd
 from datetime import datetime
 import glob
 
-spinjoy_path = '/Users/nicolaslewagon/spinjoy/'
-files = glob.glob(f'{spinjoy_path}aggregated_files/sellers_aggregate_*.csv')
+files = glob.glob(f'/aggregated_files/sellers_aggregate_*.csv')
 
 # Select the string not containing 'scored'
 files_not_scored = [f for f in files if 'scored' not in f]
@@ -67,5 +66,5 @@ current_date = datetime.now().date()
 # Get the current time
 current_time = datetime.now().time().strftime("%Hh%M")
 
-df.to_csv(f'{spinjoy_path}aggregated_files/sellers_aggregate_scored_{current_date}_{current_time}.csv', columns=columns_to_write, index=False)
+df.to_csv(f'/aggregated_files/sellers_aggregate_scored_{current_date}_{current_time}.csv', columns=columns_to_write, index=False)
 

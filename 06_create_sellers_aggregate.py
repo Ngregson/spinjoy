@@ -11,7 +11,7 @@ from datetime import datetime
 
 try:
     # Define the file pattern to match
-    file_pattern = '/Users/nicolaslewagon/spinjoy/csv_files/*_full.csv'
+    file_pattern = '/csv_files/*_full.csv'
     
     # Create a list of all the matching files
     sellers_files = glob.glob(file_pattern)
@@ -143,7 +143,7 @@ try:
     current_time = datetime.now().time().strftime("%Hh%M")
     
     # Export the file as csv
-    df_sellers_aggregate.to_csv(f'/Users/nicolaslewagon/spinjoy/aggregated_files/sellers_aggregate_{current_date}_{current_time}.csv', index=False)
+    df_sellers_aggregate.to_csv(f'/aggregated_files/sellers_aggregate_{current_date}_{current_time}.csv', index=False)
 
 except:
     print('Something went wrong')
