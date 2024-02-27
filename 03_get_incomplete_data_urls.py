@@ -9,8 +9,7 @@ import glob
 from datetime import datetime
 
 # Define paths and file name pattern
-spinjoy_path = '/Users/nicolaslewagon/spinjoy/'
-incomplete_path = f'{spinjoy_path}/csv_files/incomplete/'
+incomplete_path = 'csv_files/incomplete/'
 file_pattern = '*_incomplete.csv'
 
 # Use glob to get a list of file paths matching the pattern
