@@ -1,5 +1,10 @@
 <h1>Description</h1>
 
+<p>
+  This work is released under a Creative Commons "CC0" Public Domain Dedication; see https://creativecommons.org/publicdomain/zero/1.0/ for more info.
+</p>
+
+
 <p> 
   The Spinjoy project was carried out as part of the Data Analyst training provided by Le Wagon. 
   
