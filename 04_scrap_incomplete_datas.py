@@ -15,7 +15,7 @@ import pandas as pd
 import glob
 
 # Use glob to get the file path matching the pattern
-file_path = glob.glob('/Users/nicolaslewagon/spinjoy/releases_urls/releases_urls_*.csv')[0]
+file_path = glob.glob('releases_urls/releases_urls_*.csv')[0]
 
 #Extract seller(s) name(s)
 parts = file_path.split('_')
@@ -37,7 +37,7 @@ print(f"Number of DataFrames: {len(dataframes_list)}")
 
 # Create Chrome WebDriver with ad-blocking optionsx
 chrome_options = Options()
-chrome_options.add_extension('/Users/nicolaslewagon/spinjoy/scripts/uBlock_Origin_extension_folder/1.54.0_0.crx')
+chrome_options.add_extension('uBlock_Origin_extension_folder/1.54.0_0.crx')
 
 for i, df in enumerate(dataframes_list):
 
@@ -109,7 +109,7 @@ for i, df in enumerate(dataframes_list):
         
     # Export the dataframe
     try:
-        df.to_csv(f'/Users/nicolaslewagon/spinjoy/csv_files/datas_discogs_{sellers}_part_{i + 1}_{current_date}_{current_time}_full.csv', index=False)
+        df.to_csv(f'csv_files/datas_discogs_{sellers}_part_{i + 1}_{current_date}_{current_time}_full.csv', index=False)
     except:
         print("Something went wrong")
     else:
