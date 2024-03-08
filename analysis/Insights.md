@@ -18,4 +18,5 @@
 
 <p>Finally, let's calculate the average price for each "genre, media_condition, decade" association. **The most expensive records are Rock records in perfect condition from the 2020s and 2010s (€35.65, €26.19)**. It can be assumed that these records are new, explaining the high price. Following closely, **Second-hand reggae records from the 1970s are also more expensive than average** (€23.27 for Very Good+ and €20.89 for Very Good). **The same applies to classical records from the 1960s in nearly perfect condition (€21.95)**. This time, the high price is explained by the quality of the productions.</p>
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/920497177?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Dashboard Power BI"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+![dashboard_page1](visualization/dashboard_page1.JPG)
+![dashboard_page2](visualization/dashboard_page2.JPG)
